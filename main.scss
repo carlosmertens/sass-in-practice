@@ -2,6 +2,7 @@
 // 'sass main.scss main.css'
 // 'sass --watch main.scss:main.css'
 $main-color: #521751;
+$border-default: 0.05rem solid $main-color;
 
 @import 'typography.css';
 
@@ -29,7 +30,7 @@ body {
 }
 
 .sass-introduction {
-  border: 0.05rem solid $main-color;
+  border: $border-default;
   background: #fae5ff;
   padding: 2rem;
   text-align: center;
@@ -43,7 +44,7 @@ body {
 }
 
 .sass-details {
-  border: 0.05rem solid $main-color;
+  border: $border-default;
   background: #fae5ff;
   padding: 1rem;
   text-align: center;
@@ -53,7 +54,7 @@ body {
 }
 
 .section-header {
-  border-bottom: 0.05rem solid $main-color;
+  border-bottom: $border-default;
 }
 
 .section-header h1 {
@@ -80,7 +81,7 @@ body {
     color: $main-color;
     display: block;
     padding: 0.2rem;
-    border: 0.05rem solid $main-color;
+    border: $border-default;
   }
 
   .documentation-link:hover,
@@ -90,26 +91,6 @@ body {
     border-color: #fa923f;
   }
 }
-
-// .documentation-links li {
-//   margin: 0.2rem 0;
-//   background: white;
-// }
-
-// .documentation-links .documentation-link {
-//   text-decoration: none;
-//   color: #521751;
-//   display: block;
-//   padding: 0.2rem;
-//   border: 0.05rem solid #521751;
-// }
-
-// .documentation-links .documentation-link:hover,
-// .documentation-links .documentation-link:active {
-//   color: white;
-//   background: #fa923f;
-//   border-color: #fa923f;
-// }
 
 @media (min-width: 40rem) {
   html {
