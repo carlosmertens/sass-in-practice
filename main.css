@@ -7,7 +7,7 @@
 html {
   font-size: 94.75%;
 }
-@media (min-width: 40rem) {
+@media (min-width: width) {
   html {
     font-size: 125%;
   }
@@ -37,7 +37,7 @@ body {
   width: 90%;
   box-sizing: border-box;
 }
-@media (min-width: 40rem) {
+@media (min-width: width) {
   .sass-section, .sass-details, .sass-introduction {
     width: 30rem;
   }
