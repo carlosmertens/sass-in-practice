@@ -1,13 +1,13 @@
 .char-highlight {
   font-weight: bold;
   font-size: 1.4rem;
-  color: #300383;
+  color: #521751;
 }
 
 html {
   font-size: 94.75%;
 }
-@media (min-width: width) {
+@media (min-width: 40rem) {
   html {
     font-size: 125%;
   }
@@ -31,36 +31,33 @@ body {
 }
 
 .sass-section, .sass-details, .sass-introduction {
-  border: 0.05rem solid #300383;
-  background: #f3ecff;
+  border: 0.05rem solid #521751;
+  background: #f7e1f6;
+  padding: 2rem;
   text-align: center;
   width: 90%;
   box-sizing: border-box;
 }
-@media (min-width: width) {
+@media (min-width: 40rem) {
   .sass-section, .sass-details, .sass-introduction {
     width: 30rem;
   }
 }
 
 .sass-introduction {
-  padding: 2rem;
   box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
 }
-
 .sass-introduction p {
   margin: 0;
 }
 
 .sass-details {
-  padding: 1rem;
   margin: 2rem 0;
 }
 
 .section-header {
-  border-bottom: 0.05rem solid #300383;
+  border-bottom: 0.05rem solid #521751;
 }
-
 .section-header h1 {
   margin: 0 0 1rem 0;
 }
@@ -81,13 +78,12 @@ body {
 }
 .documentation-links .documentation-link {
   text-decoration: none;
-  color: #300383;
+  color: #521751;
   display: block;
   padding: 0.2rem;
-  border: 0.05rem solid #300383;
+  border: 0.05rem solid #521751;
 }
-.documentation-links .documentation-link:hover,
-.documentation-links .documentation-link:active {
+.documentation-links .documentation-link:hover, .documentation-links .documentation-link:active {
   color: white;
   background: #fa923f;
   border-color: #fa923f;
