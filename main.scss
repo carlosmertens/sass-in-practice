@@ -1,12 +1,18 @@
 // TO COMPILE SASS FILE
 // 'sass main.scss main.css'
 // 'sass --watch main.scss:main.css'
+
 // $main-color: #521751;
 $colors: (
   main: #013601,
   secondary: #fa923f,
 );
+
 $border-default: 0.05rem solid map-get($colors, main);
+
+$space-default: 1rem;
+$space-small: 0.2rem;
+$space-big: 2rem;
 
 @import 'typography.css';
 
@@ -36,9 +42,9 @@ body {
 .sass-introduction {
   border: $border-default;
   background: lighten(map-get($colors, main), 70%);
-  padding: 2rem;
+  padding: $space-big;
   text-align: center;
-  box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
+  box-shadow: $space-small $space-small 0.1rem #ccc;
   width: 90%;
   box-sizing: border-box;
 }
@@ -50,9 +56,9 @@ body {
 .sass-details {
   border: $border-default;
   background: lighten(map-get($colors, main), 70%);
-  padding: 1rem;
+  padding: $space-default;
   text-align: center;
-  margin: 2rem 0;
+  margin: $space-big 0;
   width: 90%;
   box-sizing: border-box;
 }
@@ -62,7 +68,7 @@ body {
 }
 
 .section-header h1 {
-  margin: 0 0 1rem 0;
+  margin: 0 0 $space-default 0;
 }
 
 .documentation-links {
@@ -99,10 +105,6 @@ body {
 @media (min-width: 40rem) {
   html {
     font-size: 125%;
-  }
-
-  .container {
-    padding: 3rem 0;
   }
 
   .sass-introduction,
