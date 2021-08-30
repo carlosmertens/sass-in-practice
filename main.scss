@@ -1,3 +1,7 @@
+// TO COMPILE SASS FILE
+// 'sass main.scss main.css'
+// 'sass --watch main.scss:main.css'
+
 @import 'typography.css';
 html {
   font-size: 94.75%;
@@ -13,8 +17,12 @@ body {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex: {
+    direction: column;
+    wrap: nowrap;
+  }
+  // flex-direction: column;
+  // flex-wrap: nowrap;
   align-items: center;
   padding: 3rem 0;
   box-sizing: border-box;
@@ -61,10 +69,12 @@ body {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
+
   li {
     margin: 0.2rem 0;
     background: white;
   }
+
   .documentation-link {
     text-decoration: none;
     color: #521751;
@@ -72,6 +82,7 @@ body {
     padding: 0.2rem;
     border: 0.05rem solid #521751;
   }
+
   .documentation-link:hover,
   .documentation-link:active {
     color: white;
