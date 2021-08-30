@@ -3,9 +3,8 @@
 // 'sass --watch main.scss:main.css'
 // $main-color: #521751;
 $colors: (
-  main: #521751,
+  main: #013601,
   secondary: #fa923f,
-  background: #fae5ff,
 );
 $border-default: 0.05rem solid map-get($colors, main);
 
@@ -36,7 +35,7 @@ body {
 
 .sass-introduction {
   border: $border-default;
-  background: map-get($colors, background);
+  background: lighten(map-get($colors, main), 70%);
   padding: 2rem;
   text-align: center;
   box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
@@ -50,7 +49,7 @@ body {
 
 .sass-details {
   border: $border-default;
-  background: map-get($colors, background);
+  background: lighten(map-get($colors, main), 70%);
   padding: 1rem;
   text-align: center;
   margin: 2rem 0;
