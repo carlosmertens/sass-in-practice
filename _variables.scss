@@ -1,0 +1,11 @@
+// $main-color: #521751;
+$colors: (
+  main: #300383,
+  secondary: #fa923f,
+);
+
+$border-default: 0.05rem solid map-get($colors, main);
+
+$space-default: 1rem;
+$space-small: 0.2rem;
+$space-big: 2rem;

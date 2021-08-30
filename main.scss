@@ -2,19 +2,8 @@
 // 'sass main.scss main.css'
 // 'sass --watch main.scss:main.css'
 
-// $main-color: #521751;
-$colors: (
-  main: #013601,
-  secondary: #fa923f,
-);
-
-$border-default: 0.05rem solid map-get($colors, main);
-
-$space-default: 1rem;
-$space-small: 0.2rem;
-$space-big: 2rem;
-
-@import 'typography.css';
+@import '_variables.scss';
+@import 'typography.scss';
 
 html {
   font-size: 94.75%;

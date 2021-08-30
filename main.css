@@ -1,4 +1,9 @@
-@import 'typography.css';
+.char-highlight {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #300383;
+}
+
 html {
   font-size: 94.75%;
 }
@@ -21,8 +26,8 @@ body {
 }
 
 .sass-introduction {
-  border: 0.05rem solid #013601;
-  background: #9ffd9f;
+  border: 0.05rem solid #300383;
+  background: #f3ecff;
   padding: 2rem;
   text-align: center;
   box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
@@ -35,8 +40,8 @@ body {
 }
 
 .sass-details {
-  border: 0.05rem solid #013601;
-  background: #9ffd9f;
+  border: 0.05rem solid #300383;
+  background: #f3ecff;
   padding: 1rem;
   text-align: center;
   margin: 2rem 0;
@@ -45,7 +50,7 @@ body {
 }
 
 .section-header {
-  border-bottom: 0.05rem solid #013601;
+  border-bottom: 0.05rem solid #300383;
 }
 
 .section-header h1 {
@@ -68,10 +73,10 @@ body {
 }
 .documentation-links .documentation-link {
   text-decoration: none;
-  color: #013601;
+  color: #300383;
   display: block;
   padding: 0.2rem;
-  border: 0.05rem solid #013601;
+  border: 0.05rem solid #300383;
 }
 .documentation-links .documentation-link:hover,
 .documentation-links .documentation-link:active {
